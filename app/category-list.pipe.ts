@@ -5,7 +5,7 @@ import { Pipe } from '@angular/core';
     pure: true
 })
 export class CategoryListPipe {
-    transform (mediaItemts) {
+    transform (mediaItems) {
         var categories = [];
         mediaItems.forEach(mediaItem => {
             if (categories.indexOf(mediaItem.category) <= -1) {
