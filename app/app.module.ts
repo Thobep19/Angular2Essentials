@@ -10,24 +10,24 @@ import { CategoryListPipe } from './category-list.pipe';
 import { MediaItemFormComponent } from './media-item-form.component';
 import { MediaItemService } from './media-item.service';
 
-@NgModule ({
-    imports: [
-        BrowserModule,
-        ReactiveFormsModule
-    ],
-    declarations: [
-        AppComponent,
-        MediaItemComponent,
-        MediaItemListComponent,
-        FavoriteDirective,
-        CategoryListPipe,
-        MediaItemFormComponent
-    ],
-    providers: [
-        MediaItemService
-    ],
-    bootstrap: [
-        AppComponent
-    ]
+@NgModule({
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule
+  ],
+  declarations: [
+    AppComponent,
+    MediaItemComponent,
+    MediaItemListComponent,
+    FavoriteDirective,
+    CategoryListPipe,
+    MediaItemFormComponent
+  ],
+  providers: [
+    MediaItemService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule {}

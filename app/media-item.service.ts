@@ -1,21 +1,20 @@
 export class MediaItemService {
-      
-      get() {
-          return this.mediaItems;
-      }
+  get() {
+    return this.mediaItems;
+  }
+  
+  add(mediaItem) {
+    this.mediaItems.push(mediaItem);
+  }
+  
+  delete(mediaItem) {
+    let index = this.mediaItems.indexOf(mediaItem);
+    if(index >= 0) {
+      this.mediaItems.splice(index, 1);
+    }
+  }
 
-      add(mediaItem) {
-          this.mediaItems.push (mediaItem);
-      }
-
-      delete(mediaItem) {
-          let index = this.mediaItems.indexOf (mediaItem);
-          if(index >=0) {
-              this.mediaItems.splice(index,1);
-          }
-      }
-      
-      mediaItems = [
+  mediaItems = [
     {
       id: 1,
       name: "Firebug",
