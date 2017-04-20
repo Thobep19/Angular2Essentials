@@ -29,7 +29,7 @@ import { MockXHRBackend } from './mock-xhr-backend';
   ],
   providers: [
     MediaItemService,
-    {provide: lookupListToken, useValue: lookupLists}
+    {provide: lookupListToken, useValue: lookupLists},
     {provide: XHRBackend , useClass: MockXHRBackend}
   ],
   bootstrap: [
